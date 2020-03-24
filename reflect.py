@@ -11,6 +11,7 @@ class RequestHandler(BaseHTTPRequestHandler):
     def do_GET(self):
 
         request_path = self.path
+        request_headers = self.headers
 
         print("\n----- Request Start ----->\n")
         print("Request path:", request_path)
